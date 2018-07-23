@@ -46,8 +46,10 @@ http://localhost:8080/getuserbyusername/{userName} -> Lists a username. Username
 In this application the username has not been set to unique due to time constraint. One can create a unique 
 or sparse index on emailid field to make it unique. This can be implemented when there is sufficient time. 
 
-http://localhost:8080/updateuser -> Slight issue in the code here. 
+http://localhost:8080/updateuser -> Update user details.
+
 http://localhost:8080/deleteuser/{userName} -> Delete user with a specific user name
+
 http://localhost:8080/deleteallusers
 
 Bug: 
