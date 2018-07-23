@@ -11,9 +11,9 @@ no SQL databse with no fixed schema. MongoDB is a document database. So there is
 establish relationships. The developer has to just design a class and mongoDB will create the corresponding collection
 out of the box
 
-=======================================================================================================================
+==================================================================================================
 Prerequisites:
------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 The user has to make sure MongoDB is installed and running on their system.The setup for the MongoDB is very easy. 
 For windows users the user has to download the jars and install Mongodb. 
 For Mac users the setup is the easiest. I will explain the mac setup. Windows users can refer to the setup online.
