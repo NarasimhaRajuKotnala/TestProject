@@ -11,7 +11,7 @@ no SQL databse with no fixed schema. MongoDB is a document database. So there is
 establish relationships. The developer has to just design a class and mongoDB will create the corresponding collection
 out of the box
 
-==================================================================================================
+===================================================================
 Prerequisites:
 ---------------------------------------------------------------------------------------------------
 The user has to make sure MongoDB is installed and running on their system.The setup for the MongoDB is very easy. 
@@ -35,6 +35,11 @@ Below are the listed features of functionality provided.
 The default port is assumed 8080 this can be changed by the server.port property in application.properties file.
 
 One can view a list of URLS to access the various CRUD operations in sprinboot. The URLs are self explanatory:
+
+Data is stored in collections in MongoDB in document format.Following are the collections and URL's for CRUD operations.
+
+User:
+
 http://localhost:8080/getusers -> Lists all users
 http://localhost:8080/getuserbyusername/{userName} -> Lists a username. Username here is unique and can be email id.
 In this application the username has not been set to unique due to time constraint. One can create a unique 
@@ -43,7 +48,7 @@ http://localhost:8080/updateuser -> Slight issue in the code here.
 http://localhost:8080/deleteuser/{userName} -> Delete user with a specific user name
 http://localhost:8080/deleteallusers
 
-Endpoints for bugs including their titles.When run on a local machine the URL is:
+Bug: 
 
 http://localhost:8080/getbugs -> list of all bugs including their titles
 http://localhost:8080/addbug -> To add a bug
