@@ -11,9 +11,9 @@ no SQL databse with no fixed schema. MongoDB is a document database. So there is
 establish relationships. The developer has to just design a class and mongoDB will create the corresponding collection
 out of the box
 
-===================================================================
+=========================================================
 Prerequisites:
----------------------------------------------------------------------------------------------------
+---------------------------------------------------------
 The user has to make sure MongoDB is installed and running on their system.The setup for the MongoDB is very easy. 
 For windows users the user has to download the jars and install Mongodb. 
 For Mac users the setup is the easiest. I will explain the mac setup. Windows users can refer to the setup online.
@@ -44,6 +44,7 @@ http://localhost:8080/getusers -> Lists all users
 http://localhost:8080/getuserbyusername/{userName} -> Lists a username. Username here is unique and can be email id.
 In this application the username has not been set to unique due to time constraint. One can create a unique 
 or sparse index on emailid field to make it unique. This can be implemented when there is sufficient time. 
+
 http://localhost:8080/updateuser -> Slight issue in the code here. 
 http://localhost:8080/deleteuser/{userName} -> Delete user with a specific user name
 http://localhost:8080/deleteallusers
