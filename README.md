@@ -27,8 +27,8 @@ Once installed run the following command to start the server
 
 mongod
 
-That will start the mongo server on port 27017. This can be changed in application.properties file of the spring
-framework.
+That will start the mongo server on port 27017. This can be changed in application.properties file of the springboot application.
+
 ============================================================================================================================
 Below are the listed features of functionality provided.
 
@@ -41,6 +41,7 @@ Data is stored in collections in MongoDB in document format.Following are the co
 User:
 
 http://localhost:8080/getusers -> Lists all users
+
 http://localhost:8080/getuserbyusername/{userName} -> Lists a username. Username here is unique and can be email id.
 In this application the username has not been set to unique due to time constraint. One can create a unique 
 or sparse index on emailid field to make it unique. This can be implemented when there is sufficient time. 
