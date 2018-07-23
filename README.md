@@ -10,9 +10,9 @@ For the kind of data required for the BugTracker Application MongoDB is quite ap
 no SQL databse with no fixed schema. MongoDB is a document database. So there is no need to design tables upfront and
 establish relationships. The developer has to just design a class and mongoDB will create the corresponding collection
 out of the box.
-=============================================================================================================================
+============================================================================================================================
 Prerequisites:
------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 The user has to make sure MongoDB is installed and running on their system.The setup for the MongoDB is very easy. 
 For windows users the user has to download the jars and install Mongodb. 
 For Mac users the setup is the easiest. I will explain the mac setup. Windows users can refer to the setup online.
@@ -33,7 +33,7 @@ Below are the listed features of functionality provided.
 
 The default port is assumed 8080 this can be changed by the server.port property in application.properties file.
 
-One can view a list of URLS to access the various CRUD operations in sprinboot. The URLs are self explanatory
+One can view a list of URLS to access the various CRUD operations in sprinboot. The URLs are self explanatory:
 http://localhost:8080/getusers -> Lists all users
 http://localhost:8080/getuserbyusername/{userName} -> Lists a username. Username here is unique and can be email id.
 In this application the username has not been set to unique due to time constraint. One can create a unique 
@@ -46,6 +46,7 @@ Endpoints for bugs including their titles.When run on a local machine the URL is
 http://localhost:8080/getbugs -> list of all bugs including their titles
 http://localhost:8080/addbug -> To add a bug
 http://localhost:8080/getbugbyuserid/{userId -> Retrieve bug for a specific user id
+http://localhost:8080/getbugbystatusopen -> This can be implemented better to query for any status by making use of the Optional feature introduced in Java 8. Also streams and lambdas features can be used for this sort of functionality.
 http://localhost:8080/updatebugbyuserid 
 http://localhost:8080/deletebugbyuserid/{userId}
 http://localhost:8080deleteallbugs
@@ -73,8 +74,7 @@ http://localhost:8080/deleteallhistory
 
 The signup and login functionality has to be developed as well for this application which will enable the user to signup
 or login to the application. Once a user is logged in he can have the authority to assign/reassign bugs , update comments,
-etc. This has not been developed but can be developed using a few framweorks. The simplest is by using MongoTemplate. There
-are many Spring security features which can be implemented for better security. One is implementing OAuth.
+etc. SO Spring boot provides features of Authorisation & Auhtentication. This has not been developed but can be developed using a few framweorks. The simplest is by using MongoTemplate. There are many Spring security features which can be implemented for better security. One is implementing OAuth.
 
 
 
