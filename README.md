@@ -9,7 +9,8 @@ comes with inbuilt tomcat setup so there is no need to worry about the setup of 
 For the kind of data required for the BugTracker Application MongoDB is quite appropriate as a database. MongoDB is a 
 no SQL databse with no fixed schema. MongoDB is a document database. So there is no need to design tables upfront and
 establish relationships. The developer has to just design a class and mongoDB will create the corresponding collection
-out of the box.
+out of the box
+
 ============================================================================================================================
 Prerequisites:
 ----------------------------------------------------------------------------------------------------------------------------
