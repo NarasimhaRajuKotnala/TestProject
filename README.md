@@ -11,9 +11,9 @@ no SQL databse with no fixed schema. MongoDB is a document database. So there is
 establish relationships. The developer has to just design a class and mongoDB will create the corresponding collection
 out of the box
 
-============================================================================================================================
+=======================================================================================================================
 Prerequisites:
-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 The user has to make sure MongoDB is installed and running on their system.The setup for the MongoDB is very easy. 
 For windows users the user has to download the jars and install Mongodb. 
 For Mac users the setup is the easiest. I will explain the mac setup. Windows users can refer to the setup online.
@@ -43,7 +43,8 @@ http://localhost:8080/updateuser -> Slight issue in the code here.
 http://localhost:8080/deleteuser/{userName} -> Delete user with a specific user name
 http://localhost:8080/deleteallusers
 
-Endpoints for bugs including their titles.When run on a local machine the URL is
+Endpoints for bugs including their titles.When run on a local machine the URL is:
+
 http://localhost:8080/getbugs -> list of all bugs including their titles
 http://localhost:8080/addbug -> To add a bug
 http://localhost:8080/getbugbyuserid/{userId -> Retrieve bug for a specific user id
@@ -52,7 +53,8 @@ http://localhost:8080/updatebugbyuserid
 http://localhost:8080/deletebugbyuserid/{userId}
 http://localhost:8080deleteallbugs
 
-Comments
+Comments:
+
 http://localhost:8080/addcomment
 http://localhost:8080/getallcomments
 http://localhost:8080/getcommentbyusername/{userName}
@@ -62,7 +64,8 @@ http://localhost:8080/updatecommentbybugid
 http://localhost:8080/deletecommentbybugid/{userName}
 http://localhost:8080/deleteallcomments
 
-History
+History:
+
 http://localhost:8080/addhistory
 http://localhost:8080/getallhistory
 http://localhost:8080/gethistorybyuserid/{userId}
